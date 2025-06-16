@@ -1,0 +1,41 @@
+@import "@styles/variables.module.scss";
+@import "@styles/mixin.module.scss";
+
+
+.container {
+    @include flex_box_custom(space-between, center, 0);
+    padding: 21px 55px;
+    background-color: $primary_color;
+    position: relative;
+    margin-top: -75px
+}
+
+.containerCard {
+    @include flex_box_custom(center, center, 15px);
+    padding: 25px 15px;
+
+    &>div:first-of-type>img {
+        transform: rotateY(180deg)
+    }
+}
+
+.containerContent {
+    @include flex_box_custom(center, flex-start, 10px);
+
+    flex-direction: column;
+
+    .title {
+        font-size: 17px;
+        color: $white_color;
+        line-height: 22px;
+        font-weight: 400;
+    }
+
+    .desc {
+        font-size: 16px;
+        color: #FFFFFFC7;
+        line-height: 21px;
+        font-weight: 400;
+
+    }
+}

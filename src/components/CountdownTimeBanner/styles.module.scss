@@ -1,0 +1,29 @@
+@import "@styles/mixin.module.scss";
+@import "@styles/variables.module.scss";
+
+
+.container {
+    background-image: url("../../assets/images/countdown.jpeg");
+    width: calc(100%/2);
+    height: 409px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.containerTimer {
+    @include flex_box_custom(center, center, 10px);
+    flex-direction: column;
+
+    &>h2 {
+        font-size: 28px;
+        font-weight: 400;
+        color: $four_color;
+        margin-top: 20px;
+    }
+}
+
+.countdown {
+    @include flex_box_custom(center, center, 15px);
+
+}
